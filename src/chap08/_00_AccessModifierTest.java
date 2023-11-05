@@ -1,4 +1,4 @@
-package chap_08;
+package chap08;
 
 import chap07.BlackBoxRefur;
 
