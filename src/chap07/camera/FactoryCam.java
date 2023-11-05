@@ -1,10 +1,16 @@
 package chap07.camera;
 
 public class FactoryCam extends Camera{
-	public String name;
+	
 	
 	public FactoryCam() {
-		this.name = "공장 카메라";
+		super("공장 카메라");
+	}
+	
+	public void recordVideo() {
+		//동영상 녹화
+		super.recordVideo();//부모클래스의 recordVideo 호출 
+		detectFire();//자식 클래스의 메소드 호출
 	}
 	
 	public void detectFire() {

@@ -5,7 +5,11 @@ public class Camera {
 	public String name;
 
 	public Camera() {
-		this.name = "카메라";
+		this("카메라");
+	}
+	
+	protected Camera(String name) {//자식클래스에서 접근 가능
+		this.name = name;
 	}
 	
 	public void takePicture() {
